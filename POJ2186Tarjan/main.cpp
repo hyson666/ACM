@@ -65,6 +65,7 @@ int main(){
 	for(int i=1;i<tag;++i)
 	  if(out[i]==0)
 		++num,mark=i;
+    //如果只有一个联通分量出度为0，这里面的所有牛肯定都被其他所有牛崇拜。
 	if(num==1){
 		for(int i=1;i<=n;++i)
 			if(flag[i]==num)
